@@ -54,23 +54,35 @@ h2 {
   font-size: 2.1em; /* h2 légèrement plus petit que h1 */
   text-align: center;
 }
-#competences h3 {
-  font-size: 1.2em; /* h2 légèrement plus petit que h1 */
-  text-align: center;
-}
 
 /* Infos spécifiques pour chaque section */
 #moi {
     background-color: #a2add4; /* Couleur pour la section "Moi" */
-    padding: 4em 4em; /* 50px en haut et en bas, 20px à gauche et à droite */
-}
-/* Appliquer le style uniquement à la section "moi" et son paragraphe */
-#moi p {
-    text-align: justify;  /* Justifier le texte */
-    margin-left: 10em;     /* Marge à gauche */
-    margin-right: 40em;    /* Marge à droite */
+    padding: 4em; /* Espacement interne de la section */
+    display: flex; /* Utiliser flexbox pour l'alignement */
+    flex-direction: column; /* Alignement des éléments en colonne */
+    align-items: center; /* Centrer les éléments horizontalement */
+    justify-content: center; /* Centrer les éléments verticalement */
+    text-align: center; /* Centrer le texte dans la section */
 }
 
+/* Appliquer le style uniquement à la section "moi" et son paragraphe */
+#moi h2 {
+    margin: 0; /* Pas de marge autour du titre */
+    padding-bottom: 1em; /* Espace sous le titre pour le séparer du texte */
+}
+
+#moi p {
+    text-align: justify;  /* Justifier le texte */
+    max-width: 600px; /* Limiter la largeur du texte pour une meilleure lisibilité */
+    margin: 0; /* Réinitialiser la marge */
+}
+
+
+#competences h3 {
+  font-size: 1.2em; /* h2 légèrement plus petit que h1 */
+  text-align: center;
+}
 
 #competences {
     background-color: #dfc0d5; /* Couleur pour la section "Compétences" */
