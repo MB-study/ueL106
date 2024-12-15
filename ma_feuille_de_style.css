@@ -1,4 +1,4 @@
-/* Global styles */
+/* Style général */
 body {
     font-family: Arial, sans serif;
     margin: 0;
@@ -182,12 +182,26 @@ body {
   height: auto;
   max-width: 90%;  /* Pour que l'image soit plus petite que la largeur du fond */
   border-radius: 10px;
+  margin-bottom: 60px; /* Ajoute de l'espace sous l'image pour séparer le lien */
 }
 
 .image-container p {
   margin-top: 10px;
+  margin-bottom: 30px;
   font-size: 16px;
   color: #333;
+}
+
+.liens_projets {
+    color: #434b64; /* Applique la couleur souhaitée */
+    text-decoration: none; /* Supprime le soulignement du lien */
+    font-size: 1.6em; /* Applique une taille similaire à celle de h3 (généralement autour de 1.5em) */
+    font-weight: bold; /* Rendre le texte en gras, comme un h3 */
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+a:hover {
+    color: #dfc0d5; 
 }
 
 /*Partie footer*/
