@@ -64,8 +64,8 @@ h2 {
 #moi p {
     text-align: justify;  /* Justifier le texte */
     text-align: center;
-    margin-left: 20em;     /* Marge à gauche */
-    margin-right: 10em;    /* Marge à droite */
+    margin-left: 15em;     /* Marge à gauche */
+    margin-right: 20em;    /* Marge à droite */
 }
 
 #competences h3 {
