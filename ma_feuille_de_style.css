@@ -64,7 +64,7 @@ h2 {
 #moi p {
     text-align: justify;  /* Justifier le texte */
     text-align: center;
-    margin-left: 30em;     /* Marge à gauche */
+    margin-left: 20em;     /* Marge à gauche */
     margin-right: 10em;    /* Marge à droite */
 }
 
