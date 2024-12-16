@@ -63,7 +63,6 @@ h2 {
 /* Style uniquement à la section "moi" et son paragraphe */
 #moi p {
     text-align: justify;  /* Justifier le texte */
-    text-align: center;
     margin-left: 15em;     /* Marge à gauche */
     margin-right: 20em;    /* Marge à droite */
 }
