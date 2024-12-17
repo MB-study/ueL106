@@ -1,4 +1,4 @@
-/* Global styles */
+/* Styles globaux */
 body {
     font-family: Arial, sans serif;
     margin: 0;
@@ -12,7 +12,7 @@ nav {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #fffcfb; /* Fond du menu */
+    background-color: #fffcfb; /* Couleur fond */
     padding: 10px;
     border-radius: 5px;
 }
@@ -26,14 +26,14 @@ nav a {
 }
 
 nav a:hover {
-    color: #e9d5e3; /* Changer la couleur du texte au survol */
+    color: #e9d5e3; /* Changer couleur du texte au survol */
 }
 
 /* Style du Header */
 header {
     background-color: #fffcfb;
     color: #434b64;
-    padding: 8em 4em; /* 50px en haut et en bas, 20px à gauche et à droite */
+    padding: 8em 4em; 
     text-align: center;
 }
 
@@ -54,11 +54,10 @@ h2 {
   font-size: 2.1em; /* h2 légèrement plus petit que h1 */
   text-align: center;
 }
-
-/* Infos spécifiques pour chaque section */
+/*Partie SECTION 1: présentation*/
 #moi {
     background-color: #a2add4; /* Couleur pour la section "Moi" */
-    padding: 4em 4em; /* 50px en haut et en bas, 20px à gauche et à droite */
+    padding: 4em 4em; 
 }
 /* Style uniquement à la section "moi" et son paragraphe */
 #moi p {
@@ -73,7 +72,7 @@ h2 {
 }
 #competences {
     background-color: #dfc0d5; /* Couleur pour la section "Compétences" */
-    padding: 4em 4em; /* 50px en haut et en bas, 20px à gauche et à droite */
+    padding: 4em 4em; 
 }
 
 
@@ -82,26 +81,26 @@ h2 {
     padding: 4em 4em; /* 50px en haut et en bas, 20px à gauche et à droite */
 }
 #formations h3, #formation p {
-  font-size: 1.2em; /* h2 légèrement plus petit que h1 */
+  font-size: 1.2em; /* h2 + petit que h1 */
   margin-left: 20em;
   margin-right:10em;
 }
 /* Modification spécifique pour les paragraphes */
 #formations p {
     font-size: 1em; /* Taille de police des paragraphes */
-    margin-left: 29em; /* Pas de marge gauche */
+    margin-left: 29em; /* Marge gauche */
     text-align: left; /* Aligner le texte à gauche */
 }
 
-
+/*Partie SECTION 3: MES HOBBIES*/
 #hobbies {
     text-align: center; /* Centrer les titres */
     background-color: #e9d5e3;
     width: 100%; /* Prendre toute la largeur */
-    overflow: hidden; /* Masquer les débordements */
-    padding: 2em 2em; /* Ajouter un peu de marge interne pour aérer */
-    box-sizing: border-box; /* Inclure le padding dans la largeur totale */
-    margin: 0 auto; /* Centrer horizontalement */
+    overflow: hidden; /* Masquer débordements */
+    padding: 2em 2em; /* Aérer avec marges */
+    box-sizing: border-box; /* Inclure ppadding dans largeur totale */
+    margin: 0 auto; /*problème de padding, à voir pourquoi*/
     max-width: 100%; /* Limiter la largeur maximale de la section */
 }
 
@@ -112,10 +111,10 @@ h2 {
 
 /* Container pour les hobbies */
 .gouts {
-    display: grid; /* Utiliser Grid pour organiser les éléments */
+    display: grid; /* Grid pour organiser*/
     grid-template-columns: repeat(3, 1fr); /* Créer 3 colonnes de largeur égale */
     gap: 10px; /* Espacement réduit entre les items */
-    margin-top: 20px; /* Espacement en haut de la grille */
+    margin-top: 20px; /* Espacement haut de la grille */
     width: 100%; /* Prendre toute la largeur disponible */
     box-sizing: border-box; /* Inclure le padding dans la largeur totale */
 }
@@ -127,21 +126,21 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    max-width: 100%; /* Assurez-vous que chaque hobby ne dépasse pas la largeur */
+    max-width: 100%; /* Chaque hobby ne dépasse pas la largeur */
     overflow: hidden; /* Masquer les débordements */
 }
 
 /* Titre de chaque hobby */
 .hobby h3 {
-    margin: 10px 0; /* Ajouter un espace au-dessus et en dessous du titre */
+    margin: 10px 0; /* Espace au-dessus et en dessous du titre */
 }
 
 /* Style pour l'icône dans chaque hobby */
 .hobby p {
     font-size: 2.5em; /* Ajuster la taille des icônes */
-    margin-bottom: 10px; /* Ajouter un peu d'espace sous l'icône */
-    max-width: 100%; /* Assurez-vous que l'icône ne dépasse pas de la div */
-    overflow: hidden; /* Masquer l'excédent si l'icône est trop grande */
+    margin-bottom: 10px; /* Espace sous l'icône */
+    max-width: 100%; /* Icône ne dépasse pas de la div */
+    overflow: hidden; /*Ne pas débordrer*/
     line-height: 1; /* Ajuster la hauteur de ligne pour un meilleur alignement */
 }
 
@@ -158,11 +157,11 @@ body {
   justify-content: space-between; /* Espacement égal entre les colonnes */
   gap: 20px; /* Ajout d'un espace entre les deux colonnes */
   padding: 40px;
-  flex-wrap: wrap; /* Si la taille de l'écran est trop petite, les colonnes passeront l'une sous l'autre */
+  flex-wrap: wrap; /*  Saut-à-la-ligne */
 }
 
 .column {
-  width: 48%; /* Chaque colonne prendra 48% de la largeur du conteneur */
+  width: 48%; /* Colonne = 48% de la largeur du conteneur */
   display: flex;
   justify-content: center; /* Centrer le contenu dans la colonne */
 }
@@ -192,9 +191,9 @@ body {
 }
 
 .liens_projets {
-    color: #434b64; /* Applique la couleur souhaitée */
+    color: #434b64; 
     text-decoration: none; /* Supprime le soulignement du lien */
-    font-size: 1.6em; /* Applique une taille similaire à celle de h3 (généralement autour de 1.5em) */
+    font-size: 1.6em; /* Taille similaire à celle de h3 (généralement autour de 1.5em) */
     font-weight: bold; /* Rendre le texte en gras, comme un h3 */
     margin-top: 30px;
     margin-bottom: 60px;
@@ -208,7 +207,7 @@ a:hover {
 /*Partie footer*/
 #contacts {
     background-color: #fffcfb; /* Couleur pour la section "Contacts" */
-    padding: 1em 1em; /* 50px en haut et en bas, 20px à gauche et à droite */
+    padding: 1em 1em; 
 }
 
 /* Footer */
@@ -217,7 +216,7 @@ footer {
     color: #434b64;
     padding: 20px;
     text-align: center;
-    margin-top: auto; /* Cela pousse le footer en bas */
+    margin-top: auto; /* " Pousse le footer en bas " */
 }
 
 footer h2 {
